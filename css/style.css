@@ -1,0 +1,57 @@
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+.header-bg {
+
+    background-image: url("../images/bg2.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 720px;
+}
+
+.font {
+
+    font-size: 60px;
+}
+
+.txt {
+
+    color: #0680ea;
+}
+
+.btn-clr {
+
+    background-color: #015196;
+    color: white;
+}
+
+.card-num {
+
+    background-color: #015196;
+}
+
+.icon {
+
+    transition: transform 0.3s ease-in;
+}
+
+.icon:hover {
+
+    transform: scale(1.4);
+
+}
+
+.br {
+
+    border: 1px solid white;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 60%;
+    background-color: white;
+
+}
