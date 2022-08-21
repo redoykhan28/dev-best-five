@@ -44,12 +44,12 @@
                     <div class="card" style="width: 18rem;">
                         <img src="images/p1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fs-3 text-center mt-2">Lionel Messi</h5>
+                            <h5 class="card-title fs-3 text-center mt-2 " id="player1">Lionel Messi</h5>
                             <div class="d-flex justify-content-around py-4">
                                 <p class="fw-bold">55 goals</p>
                                 <p class="fw-bold">140 assist</p>
                             </div>
-                            <a href="#" class="btn btn-clr d-block select-btn">Select</a>
+                            <a href="#" class="btn btn-clr d-block" id="select-btn1">Select</a>
                         </div>
 
                     </div>
@@ -60,12 +60,12 @@
                     <div class="card" style="width: 18rem;">
                         <img src="images/p3.jfif" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fs-3 text-center mt-2">Kylian Mbappe</h5>
+                            <h5 class="card-title fs-3 text-center mt-2 " id="player2">Kylian Mbappe</h5>
                             <div class="d-flex justify-content-around py-4">
                                 <p class="fw-bold">45 goals</p>
                                 <p class="fw-bold">80 assist</p>
                             </div>
-                            <a href="#" class="btn btn-clr d-block select-btn">Select</a>
+                            <a href="#" class="btn btn-clr d-block " id="select-btn2">Select</a>
                         </div>
                     </div>
 
@@ -76,12 +76,12 @@
                     <div class="card" style="width: 18rem;">
                         <img src="images/p2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fs-3 text-center mt-2">Neymar Jr</h5>
+                            <h5 class="card-title fs-3 text-center mt-2 " id="player3">Neymar Jr</h5>
                             <div class="d-flex justify-content-around py-4">
                                 <p class="fw-bold">42 goals</p>
                                 <p class="fw-bold">110 assist</p>
                             </div>
-                            <a href="#" class="btn btn-clr d-block select-btn">Select</a>
+                            <a href="#" class="btn btn-clr d-block " id="select-btn3">Select</a>
                         </div>
                     </div>
 
@@ -90,15 +90,11 @@
                 <div class="col-md-3">
 
                     <div class="card card-num" style="width: 18rem;">
-                        <h3 class="text-center text-white">Selected-5</h3>
+                        <h3 class="text-center text-white mt-3">Selected-5</h3>
                         <img src="images/border.png" class="w-75 mx-auto" alt="">
 
-                        <ol class="text-white my-3">
-                            <li class="p-3 fs-5"></li>
-                            <li class="p-3 fs-5"></li>
-                            <li class="p-3 fs-5"></li>
-                            <li class="p-3 fs-5"></li>
-                            <li class="p-3 fs-5"></li>
+                        <ol class="text-white my-3 py-3" id="list">
+
                         </ol>
 
                     </div>
@@ -110,12 +106,12 @@
                     <div class="card" style="width: 18rem;">
                         <img src="images/p4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fs-3 text-center mt-2">Cristiano Ronaldo</h5>
+                            <h5 class="card-title fs-3 text-center mt-2 " id="player4">Cristiano Ronaldo</h5>
                             <div class="d-flex justify-content-around py-4">
                                 <p class="fw-bold">51 goals</p>
                                 <p class="fw-bold">102 assist</p>
                             </div>
-                            <a href="#" class="btn btn-clr d-block select-btn">Select</a>
+                            <a href="#" class="btn btn-clr d-block " id="select-btn4">Select</a>
                         </div>
                     </div>
 
@@ -125,12 +121,12 @@
                     <div class="card" style="width: 18rem;">
                         <img src="images/p5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fs-3 text-center mt-2">Lautaro Martinez</h5>
+                            <h5 class="card-title fs-3 text-center mt-2 " id="player5">Lautaro Martinez</h5>
                             <div class="d-flex justify-content-around py-4">
                                 <p class="fw-bold">38 goals</p>
                                 <p class="fw-bold">88 assist</p>
                             </div>
-                            <a href="#" class="btn btn-clr d-block select-btn">Select</a>
+                            <a href="#" class="btn btn-clr d-block " id="select-btn5">Select</a>
                         </div>
                     </div>
 
@@ -140,12 +136,12 @@
                     <div class="card" style="width: 18rem;">
                         <img src="images/p6.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title fs-3 text-center mt-2">Anger Di-Maria</h5>
+                            <h5 class="card-title fs-3 text-center mt-2 " id="player6">Anger Di-Maria</h5>
                             <div class="d-flex justify-content-around py-4">
                                 <p class="fw-bold">38 goals</p>
                                 <p class="fw-bold">120 assist</p>
                             </div>
-                            <a href="#" class="btn btn-clr d-block select-btn">Select</a>
+                            <a href="#" class="btn btn-clr d-block " id="select-btn6">Select</a>
                         </div>
                     </div>
 
@@ -162,11 +158,11 @@
 
                             <span class="text-white mx-1">Per Player</span>
 
-                            <input type="text" class="w-50">
+                            <input type="text" id="perPlayerField" class="w-50">
 
-                            <button class="btn btn-light w-100 d-block my-4 fw-bold">Calculate</button>
+                            <button class="btn btn-light w-100 d-block my-4 fw-bold" id="calculate">Calculate</button>
 
-                            <p class="text-white mx-1">Player Expenses: $</p>
+                            <p class="text-white mx-1">Player Expenses: $ <span id="expanses"></span> </p>
 
                             <span class="text-white mx-1 my-3">Manager</span>
 
@@ -191,6 +187,10 @@
         </section>
 
     </main>
+
+    <script src="js/utility.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/calculate.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
