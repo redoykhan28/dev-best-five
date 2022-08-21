@@ -1,12 +1,24 @@
 //calculate the 5-selected players
 document.getElementById('calculate').addEventListener('click', function () {
 
-    let perPlayerrate = document.getElementById('perPlayerField');
-    let perPlayerrateValue = parseFloat(perPlayerrate.value);
+    //total expenses of 5 player
+    let expenses = calculatePlayerExpenses('perPlayerField', 'expanses');
 
-    let playerExpenses = perPlayerrateValue * 5
 
-    let totalExpanses = document.getElementById('expanses');
-    totalExpanses.innerText = playerExpenses
 
+})
+
+document.getElementById('calculateTotal').addEventListener('click', function () {
+
+    //total expenses of 5 player
+    let expenses = calculatePlayerExpenses('perPlayerField', 'expanses');
+
+    //total expenses for coach and manager
+    let totalManagement = calculateManagement('manager-field', 'coach-field');
+
+    let total = expenses + totalManagement
+
+    //set the total amount
+    let totalAmount = document.getElementById('totalAmount');
+    totalAmount.innerText = total;
 })
