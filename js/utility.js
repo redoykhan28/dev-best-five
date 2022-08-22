@@ -36,9 +36,9 @@ function calculatePlayerExpenses(elem1, elem2) {
 
     //calculate total expenses of selected players
 
-    let ol = document.getElementById('list');
+    let parent = document.getElementById('list');
 
-    let childSelected = parseFloat(ol.childNodes.length - 1);
+    let childSelected = parseFloat(parent.childNodes.length - 1);
 
     let playerExpenses = perPlayerrateValue * childSelected;
 
@@ -51,7 +51,6 @@ function calculatePlayerExpenses(elem1, elem2) {
 }
 
 //adding function for calculate manager and coach
-
 function calculateManagement(elem1, elem2) {
 
     //for manager
@@ -63,26 +62,64 @@ function calculateManagement(elem1, elem2) {
     let coachValue = parseFloat(coach.value);
     console.log(coachValue);
 
-
+    //total management
     let totalManagement = managerValue + coachValue;
     return totalManagement;
 
 }
 
 
-//error handle for not select more than 5 players
+//error handle for not select more than 5 players and showing the selected player numbers
 function selectedPlayerHandle() {
 
-    let ol = document.getElementById('list');
+    let parent = document.getElementById('list');
 
-    let childLength = ol.childNodes.length;
+    let childLength = parent.childNodes.length;
+
 
     if (childLength > 5) {
+
 
         alert("you can't add more than 5 players");
         return true;
 
     }
 
+    //showing the player number that we selected
+    let number = document.getElementById('select-number')
+    number.innerText = '-' + childLength;
+
 }
+
+
+function playerErrorHandling() {
+
+    let player = document.getElementById('perPlayerField')
+    let playerValue = player.value;
+
+    if (isNaN(playerValue) || playerValue === '') {
+
+        alert('Error! Please insert a number');
+
+        return true;
+    }
+}
+
+//calculation error handeling for input field(coach&manager)
+function managementErrorHandling() {
+    //selecting manager and coach
+    let manager = document.getElementById('manager-field');
+    let managerValue = manager.value;
+    let coach = document.getElementById('coach-field');
+    let coachValue = coach.value;
+
+
+    //if not a number or empty
+    if (isNaN(managerValue) || isNaN(coachValue) || managerValue === '' || coachValue === '') {
+
+        alert('Error! Please insert a number');
+        return true;
+    }
+}
+
 

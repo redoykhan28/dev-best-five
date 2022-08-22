@@ -65,3 +65,33 @@ body {
 
     color: #FF5E19;
 }
+
+#select-number {
+
+    color: #fe4d02;
+}
+
+footer {
+
+    padding: 40px;
+    text-align: center;
+    background-image: url(../images/footerbg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+
+.social i {
+
+    color: white;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.social i:hover {
+
+    opacity: 0.7;
+}
