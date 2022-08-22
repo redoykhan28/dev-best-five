@@ -91,7 +91,7 @@ function selectedPlayerHandle() {
 
 }
 
-
+//per player fielf error handling
 function playerErrorHandling() {
 
     let player = document.getElementById('perPlayerField')
