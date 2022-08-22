@@ -79,11 +79,10 @@ function selectedPlayerHandle() {
 
     if (childLength > 5) {
 
-        alert('you cant add more than 5 players');
+        alert("you can't add more than 5 players");
         return true;
 
     }
-
 
 }
 
