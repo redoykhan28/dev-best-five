@@ -4,8 +4,6 @@ document.getElementById('calculate').addEventListener('click', function () {
     //total expenses of 5 player
     let expenses = calculatePlayerExpenses('perPlayerField', 'expanses');
 
-
-
 })
 
 document.getElementById('calculateTotal').addEventListener('click', function () {
