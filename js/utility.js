@@ -15,7 +15,7 @@ function selectPlayers(elem1) {
 
     // append the child element into parent
 
-    //check that select player is more than 5 or not
+    //error handling for select player is more than 5 or not
     let listLenght = selectedPlayerHandle();
     if (listLenght) {
 
